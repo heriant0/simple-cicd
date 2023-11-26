@@ -11,7 +11,7 @@ func TestConnectionPostgres(t *testing.T) {
 	host := config.GetEnv("DB_HOST", "localhost")
 	port := config.GetEnv("DB_PORT", "5432")
 	user := config.GetEnv("DB_USER", "postgres")
-	pass := config.GetEnv("DB_PASS", "mysecretpassword")
+	pass := config.GetEnv("DB_PASS", "postgres")
 	dbname := config.GetEnv("DB_NAME", "postgres")
 
 	t.Run("success connect", func(t *testing.T) {
